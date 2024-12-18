@@ -154,8 +154,8 @@
         <!-- ---------------------------------------------------------------------------------------------- -->
 
         <!-- ------------------------CAROUSEL SECTION-------------------------------------------------- -->
-        <div class="carousel_section mb-5">
-
+        <div class="carousel_section d-flex flex-column justify-content-center align-items-center mb-5">
+            <p class="fs-1 fw-bold mb-4">Why Choose Deliote?</p>
             <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="auto"
                 centered-slides="true" space-between="30">
                 <swiper-slide>
@@ -175,7 +175,6 @@
                         </div>
                     </div>
                 </swiper-slide>
-
 
                 <swiper-slide>
                     <div class="slide d-flex flex-column flex-md-row justify-content-between">
@@ -214,8 +213,6 @@
                 </swiper-slide>
 
             </swiper-container>
-
-
 
         </div>
         <!-- -------------------------------------------------------------------------------------------- -->
@@ -297,11 +294,12 @@
             <div class="d-flex flex-column flex-lg-row align-items-center ps-4 mb-4">
                 <div class="subscribe d-flex flex-column align-items-start justify-content-center">
                     <h4 class="mb-4">Deliote</h4>
-                    <form>
+                    <form id="form">
                         <p class="fw-bolder">Subscribe to our newsletter</p>
-                        <input placeholder="Enter your email" id="email" class="mb-3" />
+                        <input placeholder="Enter your email" id="email" class="mb-3" autocomplete="email" required
+                            type="email" />
                         <br />
-                        <button class="submit_button fw-bolder">Submit</button>
+                        <button class="submit_button fw-bolder" id="submit">Submit</button>
                     </form>
                 </div>
 
@@ -346,8 +344,7 @@
         </footer>
         <!-- ------------------------------------------------------------------------------------------- -->
 
-        <div class="last">
-        </div>
+        <div class="last"> </div>
 
     </div>
 
